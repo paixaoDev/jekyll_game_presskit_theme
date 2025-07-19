@@ -270,60 +270,6 @@ bundle exec jekyll serve
 
 # Visit http://localhost:4000
 ```
-
-### Development Options
-
-```bash
-# With live reload
-bundle exec jekyll serve --livereload
-
-# On specific port
-bundle exec jekyll serve --port 4001
-
-# With incremental build (faster)
-bundle exec jekyll serve --incremental
-```
-
-## 🛠️ Troubleshooting
-
-### Images Not Displaying?
-
-If images are not showing up:
-
-1. **Check URLs**: Ensure image URLs in `_config.yml` are complete and accessible
-2. **Test URLs**: Open image URLs directly in browser to verify they work
-3. **Use HTTPS**: Prefer HTTPS URLs for better security and compatibility
-4. **Check file formats**: Use common formats like PNG, JPG, or WEBP
-
-### Common Issues
-
-- **404 errors**: Verify image URLs are correct and accessible
-- **Mixed content**: Use HTTPS URLs when your site is served over HTTPS
-- **Slow loading**: Optimize image sizes (recommended max: 4MB per image)
-- **CORS issues**: Host images on a CDN or your own domain
-
-### 💡 Tips
-
-- **Use CDN**: Services like Cloudinary, Imgur, or your own CDN for better performance
-- **Optimize images**: Compress images before uploading
-- **Test locally**: Run `bundle exec jekyll serve` to test before deploying
-
-## 📄 Sections
-
-Your press kit will include:
-1. **Factsheet** - Basic game info (includes social media)
-2. **Description** - Game overview
-3. **History** - Game story
-4. **Features** - Key features
-5. **Videos** - Gameplay trailers and interviews
-6. **Images** - Screenshots (with download link)
-7. **Logo & Icon** - Downloadable assets
-8. **Selected Articles** - Press reviews and quotes
-9. **Additional Links** - External resources
-10. **About Studio** - Developer info
-11. **Team** - Credits
-12. **Contact** - Contact info
-
 ## 🤝 Contributing
 
 Found a bug or have a suggestion? [Open an issue](https://github.com/yourusername/jekyll-game-presskit-theme/issues) or submit a pull request!
@@ -336,14 +282,6 @@ If you've forked this repository and want to contribute back:
 2. **Test locally** using `bundle exec jekyll serve`
 3. **Create a pull request** to the original repository
 4. **Describe your changes** clearly in the PR description
-
-### For Template Users
-
-If you used this as a template and want to share your press kit:
-
-1. **Add your press kit** to the [Live Examples](#live-examples) section below
-2. **Share on social media** with the hashtag `#GamePressKit`
-3. **Credit the theme** by keeping the footer attribution
 
 ## 🌟 Live Examples
 

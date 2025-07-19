@@ -271,59 +271,6 @@ bundle exec jekyll serve
 # Visitar http://localhost:4000
 ```
 
-### Opções de Desenvolvimento
-
-```bash
-# Com live reload
-bundle exec jekyll serve --livereload
-
-# Em porta específica
-bundle exec jekyll serve --port 4001
-
-# Com build incremental (mais rápido)
-bundle exec jekyll serve --incremental
-```
-
-## 🛠️ Solução de Problemas
-
-### Imagens Não Aparecem?
-
-Se as imagens não estão aparecendo:
-
-1. **Verifique URLs**: Certifique-se de que as URLs das imagens no `_config.yml` estão completas e acessíveis
-2. **Teste URLs**: Abra as URLs das imagens diretamente no navegador para verificar se funcionam
-3. **Use HTTPS**: Prefira URLs HTTPS para melhor segurança e compatibilidade
-4. **Verifique formatos**: Use formatos comuns como PNG, JPG ou WEBP
-
-### Problemas Comuns
-
-- **Erros 404**: Verifique se as URLs das imagens estão corretas e acessíveis
-- **Conteúdo misto**: Use URLs HTTPS quando seu site for servido via HTTPS
-- **Carregamento lento**: Otimize o tamanho das imagens (máximo recomendado: 4MB por imagem)
-- **Problemas CORS**: Hospede imagens em um CDN ou seu próprio domínio
-
-### 💡 Dicas
-
-- **Use CDN**: Serviços como Cloudinary, Imgur ou seu próprio CDN para melhor performance
-- **Otimize imagens**: Comprima imagens antes de fazer upload
-- **Teste localmente**: Execute `bundle exec jekyll serve` para testar antes de fazer deploy
-
-## 📄 Seções
-
-Seu press kit incluirá:
-1. **Factsheet** - Informações básicas do jogo (inclui redes sociais)
-2. **Description** - Visão geral do jogo
-3. **History** - História do jogo
-4. **Features** - Recursos principais
-5. **Videos** - Trailers de gameplay e entrevistas
-6. **Images** - Screenshots (com link para download)
-7. **Logo & Icon** - Assets para download
-8. **Selected Articles** - Reviews da imprensa e citações
-9. **Additional Links** - Recursos externos
-10. **About Studio** - Informações do desenvolvedor
-11. **Team** - Créditos
-12. **Contact** - Informações de contato
-
 ## 🤝 Contribuindo
 
 Encontrou um bug ou tem uma sugestão? [Abra uma issue](https://github.com/seuusuario/jekyll-game-presskit-theme/issues) ou envie um pull request!
@@ -337,13 +284,6 @@ Se você fez fork deste repositório e quer contribuir de volta:
 3. **Crie um pull request** para o repositório original
 4. **Descreva suas alterações** claramente na descrição do PR
 
-### Para Usuários do Template
-
-Se você usou isso como template e quer compartilhar seu press kit:
-
-1. **Adicione seu press kit** na seção [Exemplos ao Vivo](#exemplos-ao-vivo) abaixo
-2. **Compartilhe nas redes sociais** com a hashtag `#GamePressKit`
-3. **Dê crédito ao tema** mantendo a atribuição no rodapé
 
 ## 🌟 Exemplos ao Vivo
 
