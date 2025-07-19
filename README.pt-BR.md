@@ -165,26 +165,6 @@ images:
     - "https://seudominio.com/images/screenshot3.jpg"
 ```
 
-#### Exemplos com Diferentes Serviços:
-
-```yaml
-# Usando Imgur
-files:
-  - "https://i.imgur.com/seu-id-da-imagem.jpg"
-
-# Usando Cloudinary
-files:
-  - "https://res.cloudinary.com/seu-cloud/image/upload/v1/sua-imagem.jpg"
-
-# Usando GitHub (para imagens no seu repo)
-files:
-  - "https://raw.githubusercontent.com/usuario/repo/main/images/screenshot.jpg"
-
-# Usando CDN
-files:
-  - "https://cdn.seudominio.com/images/screenshot.jpg"
-```
-
 ### Opção 2: Usando Arquivos Locais
 
 Coloque suas imagens em `assets/images/` e use caminhos relativos:
@@ -214,37 +194,6 @@ images:
 - **JPG/JPEG**: Para screenshots e fotos
 - **WEBP**: Para melhor compressão
 - **GIF**: Para animações simples
-
-## 🎨 Personalização
-
-### Cores e Layout
-Edite `assets/css/main.css` para personalizar:
-- Cores e tipografia
-- Espaçamento e grid do layout
-- Breakpoints responsivos
-- Efeitos de animação
-
-### Conteúdo
-Todo o conteúdo é gerenciado através do `_config.yml`:
-- Informações do jogo
-- Imagens e vídeos
-- Detalhes da equipe e contato
-- Links de redes sociais
-
-### Seções
-O tema inclui estas seções:
-1. **Factsheet** - Informações básicas do jogo
-2. **Description** - Visão geral do jogo
-3. **History** - História do jogo
-4. **Features** - Recursos principais
-5. **Videos** - Trailers de gameplay
-6. **Images** - Screenshots
-7. **Logo & Icon** - Assets para download
-8. **Selected Articles** - Reviews da imprensa
-9. **Additional Links** - Recursos externos
-10. **About Studio** - Informações do desenvolvedor
-11. **Team** - Créditos
-12. **Contact** - Informações de contato
 
 ## 📊 Google Analytics
 

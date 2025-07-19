@@ -165,26 +165,6 @@ images:
     - "https://yourdomain.com/images/screenshot3.jpg"
 ```
 
-#### Examples with Different Services:
-
-```yaml
-# Using Imgur
-files:
-  - "https://i.imgur.com/your-image-id.jpg"
-
-# Using Cloudinary
-files:
-  - "https://res.cloudinary.com/your-cloud/image/upload/v1/your-image.jpg"
-
-# Using GitHub (for images in your repo)
-files:
-  - "https://raw.githubusercontent.com/username/repo/main/images/screenshot.jpg"
-
-# Using CDN
-files:
-  - "https://cdn.yourdomain.com/images/screenshot.jpg"
-```
-
 ### Option 2: Using Local Assets
 
 Place your images in `assets/images/` and use relative paths:
@@ -214,37 +194,6 @@ images:
 - **JPG/JPEG**: For screenshots and photos
 - **WEBP**: For better compression
 - **GIF**: For simple animations
-
-## 🎨 Customization
-
-### Colors & Layout
-Edit `assets/css/main.css` to customize:
-- Colors and typography
-- Layout spacing and grid
-- Responsive breakpoints
-- Animation effects
-
-### Content
-All content is managed through `_config.yml`:
-- Game information
-- Images and videos
-- Team and contact details
-- Social media links
-
-### Sections
-The theme includes these sections:
-1. **Factsheet** - Basic game info
-2. **Description** - Game overview
-3. **History** - Game story
-4. **Features** - Key features
-5. **Videos** - Gameplay trailers
-6. **Images** - Screenshots
-7. **Logo & Icon** - Downloadable assets
-8. **Selected Articles** - Press reviews
-9. **Additional Links** - External resources
-10. **About Studio** - Developer info
-11. **Team** - Credits
-12. **Contact** - Contact info
 
 ## 📊 Google Analytics
 
