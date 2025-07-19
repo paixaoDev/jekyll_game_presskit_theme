@@ -1,0 +1,385 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    padding: 0px 10em  0px 10em;
+    color: #333;
+    background: white;
+}
+
+hr {
+    background: #cfcfcf78;
+    height: 1px;
+    border: none;
+    margin: 20px 0px;
+}
+
+/* Presskit Layout - Sidebar + Main Content */
+.presskit-layout {
+    display: flex;
+    min-height: 100vh;
+    background: white;
+}
+
+/* Sidebar */
+.presskit-sidebar {
+    width: 250px;
+    background: white;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.sidebar-header {
+    padding: 20px 20px 0px;
+}
+
+.sidebar-header h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #333;
+    line-height: 1.3;
+    margin: 0;
+}
+
+/* Sidebar Navigation */
+.sidebar-nav {
+    padding: 15px 0;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+}
+
+.sidebar-nav li {
+    margin: 0;
+}
+
+.sidebar-nav a {
+    display: block;
+    padding: 8px 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 400;
+    transition: none;
+    border-left: none;
+}
+
+.sidebar-nav a:hover {
+    background:  #cfcfcf43;
+    color: #333;
+    border-left-color: transparent;
+}
+
+.sidebar-nav a.active {
+    background: none;
+    color: #333;
+    border-left-color: transparent;
+    font-weight: 400;
+}
+
+/* Main Content */
+.presskit-main {
+    flex: 1;
+    margin-left: 250px;
+    padding: 30px;
+    max-width: calc(100vw - 250px);
+    overflow-y: auto;
+}
+
+.content-wrapper {
+    max-width: 1200px;
+}
+
+/* Top Sections Layout - Two Columns with different widths */
+.top-sections {
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    gap: 40px;
+    margin-bottom: 10px;
+}
+
+/* Bottom Sections Layout - Two Columns */
+.bottom-sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+/* Sections */
+.presskit-section {
+    margin-bottom: 30px;
+}
+
+.presskit-section h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+/* All section titles are now borderless */
+
+.presskit-section h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #2c3e50;
+    margin: 0px;
+}
+
+.presskit-section p {
+    margin-bottom: 0px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #495057;
+}
+
+.presskit-section ul {
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+
+.presskit-section li {
+    margin-bottom: 0px;
+    color: #495057;
+    font-size: 0.9rem;
+}
+
+/* Factsheet */
+.factsheet-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.factsheet-item {
+    padding: 0;
+    border: none;
+    background: none;
+    margin: 0;
+}
+
+.factsheet-item strong {
+    color: #333;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.factsheet-item a {
+    color: #0066cc;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.factsheet-item a:hover {
+    text-decoration: underline;
+}
+
+/* Price Table - Removed, using simple text instead */
+
+/* Images Content */
+.images-content {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.image-item {
+    text-align: left;
+    flex: 1;
+    min-width: 200px;
+}
+
+.image-item p {
+    font-size: 0.9rem;
+    color: #495057;
+    margin: 0;
+}
+
+/* Logo Content */
+.logo-content {
+    text-align: left;
+}
+
+.download-link {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    transition: background 0.3s ease;
+    font-size: 0.85rem;
+}
+
+.download-link:hover {
+    background: #2980b9;
+}
+
+.logo-display {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.logo-display p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #495057;
+}
+
+/* Links */
+.presskit-section a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.presskit-section a:hover {
+    text-decoration: underline;
+}
+
+/* Credits Content */
+.credits-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.credit-item {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.credit-item strong {
+    color: #2c3e50;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Contact Content */
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-item {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.contact-item strong {
+    color: #2c3e50;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Videos Content */
+.videos-content {
+    min-height: 80px;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6c757d;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    body {
+        padding: 0px;
+    }
+
+    .presskit-layout {
+        flex-direction: column;
+    }
+    
+    .presskit-sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-right: none;
+        border-bottom: 1px solid #e9ecef;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+    
+    .presskit-sidebar.mobile-open {
+        transform: translateX(0);
+    }
+    
+    .presskit-main {
+        margin-left: 0;
+        padding: 20px;
+        max-width: 100%;
+    }
+    
+    .sidebar-header h1 {
+        font-size: 1rem;
+    }
+    
+    .presskit-section h2 {
+        font-size: 1.3rem;
+    }
+    
+    .top-sections {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .bottom-sections {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .images-content {
+        flex-direction: column;
+    }
+    
+    .image-item {
+        min-width: auto;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+.sidebar-nav a:focus,
+.download-link:focus {
+    outline: 2px solid #7b7b7b36;
+    outline-offset: 2px;
+}
+
+/* Active section highlighting */
+.presskit-section:target {
+    animation: highlight 2s ease-out;
+}
+
+@keyframes highlight {
+    0% { background-color: rgba(52, 152, 219, 0.1); }
+    100% { background-color: transparent; }
+} 

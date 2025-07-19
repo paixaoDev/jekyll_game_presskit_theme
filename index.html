@@ -1,0 +1,164 @@
+---
+layout: default
+---
+
+<div class="presskit-layout">
+    <!-- Sidebar Navigation -->
+    <aside class="presskit-sidebar">
+        <div class="sidebar-header">
+            <h1>{{ site.game.title }}</h1>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="#factsheet">Factsheet</a></li>
+                <li><a href="#description">Description</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#images">Images</a></li>
+                <li><a href="#logo">Logo & Icon</a></li>
+                <li><a href="#links">Additional Links</a></li>
+                <li><a href="#about">About Studio</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="presskit-main">
+        <div class="content-wrapper">
+            <!-- Top Sections in Two Columns -->
+            <div class="top-sections">
+                <!-- Left Column -->
+                <div class="left-column">
+                    <section id="factsheet" class="presskit-section">
+                        <h2>Factsheet</h2>
+                        <div class="factsheet-content">
+                            <div class="factsheet-item">
+                                <strong>Developer:</strong><br>
+                                <a href="{{ site.game.developer_url }}">{{ site.game.developer }}</a><br>
+                            </div>
+                            <div class="factsheet-item">
+                                <strong>Release date:</strong><br>
+                                {{ site.game.release_date }}
+                            </div>
+                            <div class="factsheet-item">
+                                <strong>Platforms:</strong><br>
+                                {{ site.game.platforms }}
+                            </div>
+                            <div class="factsheet-item">
+                                <strong>Regular Price:</strong><br>
+                                {{ site.game.price }}
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Right Column -->
+                <div class="right-column">
+                    <section id="description" class="presskit-section">
+                        <h2>Description</h2>
+                        <p>{{ site.game.description }}</p>
+                    </section>
+
+                    <section id="history" class="presskit-section">
+                        <h2>History</h2>
+                        <p>{{ site.game.history }}</p>
+                    </section>
+
+                    <section id="features" class="presskit-section">
+                        <h2>Features</h2>
+                        <ul>
+                            {% for feature in site.game.features %}
+                            <li>{{ feature }}</li>
+                            {% endfor %}
+                        </ul>
+                    </section>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Full Width Sections -->
+            <section id="videos" class="presskit-section">
+                <h2>Videos</h2>
+                <div class="videos-content">
+                    <!-- Videos will be added here -->
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="images" class="presskit-section">
+                <h2>Images</h2>
+                <div class="images-content">
+                    {% for image in site.images %}
+                    <div class="image-item">
+                        <p>{{ image }}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="logo" class="presskit-section">
+                <h2>Logo & Icon</h2>
+                <div class="logo-content">
+                    <a href="{{ site.game.logo_download }}" class="download-link">download logo files as .zip</a>
+                    <div class="logo-display">
+                        {% for logo_file in site.game.logo_files %}
+                        <p>{{ logo_file }}</p>
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="links" class="presskit-section">
+                <h2>Additional Links</h2>
+                <ul>
+                    <li><a href="{{ site.game.website }}">Game website</a></li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <section id="about" class="presskit-section">
+                <h2>About Studio</h2>
+                <p>{{ site.about.description }}</p>
+            </section>
+            <hr>
+            <!-- Team and Contact in Two Columns -->
+            <div class="bottom-sections">
+                <section id="team" class="presskit-section">
+                    <h2>Game Credits</h2>
+                    <div class="credits-content">
+                        {% for member in site.team %}
+                        <div class="credit-item">
+                            <strong>{{ member.name }}</strong><br>
+                            {{ member.role }}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </section>
+
+                <section id="contact" class="presskit-section">
+                    <h2>Contact</h2>
+                    <div class="contact-content">
+                        <div class="contact-item">
+                            <strong>Inquiries</strong><br>
+                            <a href="mailto:{{ site.contact.inquiries }}">{{ site.contact.inquiries }}</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Social Media</strong><br>
+                            <a href="{{ site.contact.social_url }}">{{ site.contact.social_media }}</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+</div> 

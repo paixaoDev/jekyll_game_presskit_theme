@@ -1,0 +1,71 @@
+# Site settings
+title: "Game Press Kit Theme"
+description: "A clean and minimal Jekyll theme for game press kits"
+author: "Your Name"
+email: "your.email@example.com"
+url: "https://your-site.github.io"
+lang: "en"
+
+# Game Information
+game:
+  title: "Game Title"
+  description: "Game description goes here."
+  history: "Game history and background story goes here."
+  features:
+    - "Feature 1"
+    - "Feature 2"
+    - "Feature 3"
+  developer: "Studio Name"
+  developer_description: "Studio description"
+  developer_url: "#"
+  release_date: "TBA"
+  platforms: "TBA"
+  price: "USD TBA"
+  website: "#"
+  logo_download: "#"
+  logo_files:
+    - "logo.png"
+    - "icon.png"
+    - "banner.jpg"
+
+# Team Information
+team:
+  - name: "Developer Name"
+    role: "Role / Position"
+  - name: "Artist Name"
+    role: "Role / Position"
+
+# Contact Information
+contact:
+  inquiries: "contact@studio.com"
+  social_media: "@studio"
+  social_url: "#"
+
+# About Studio
+about:
+  description: "Studio description goes here."
+
+# Images
+images:
+  - "screenshot1.jpg"
+  - "screenshot2.jpg"
+  - "screenshot3.jpg"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor 
