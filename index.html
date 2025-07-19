@@ -95,7 +95,7 @@ layout: default
                 <div class="images-content">
                     {% for image in site.images %}
                     <div class="image-item">
-                        <p>{{ image }}</p>
+                        <p><img src="{{ image }}" alt="{{ image }}"></p>
                     </div>
                     {% endfor %}
                 </div>
@@ -109,7 +109,7 @@ layout: default
                     <a href="{{ site.game.logo_download }}" class="download-link">download logo files as .zip</a>
                     <div class="logo-display">
                         {% for logo_file in site.game.logo_files %}
-                        <p>{{ logo_file }}</p>
+                        <p><img src="{{ logo_file }}" alt="{{ logo_file }}"></p>
                         {% endfor %}
                     </div>
                 </div>
