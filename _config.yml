@@ -6,17 +6,8 @@ email: "your.email@example.com"
 url: "https://your-site.github.io"
 lang: "en"
 
-# Game Basic Information
+# Game Information (Factsheet, Description, History, Features, Logo)
 game:
-  # Factsheet
-  developer: "Studio Name"
-  developer_description: "Studio description"
-  developer_url: "#"
-  release_date: "TBA"
-  platforms: "TBA"
-  price: "USD TBA"
-
-  #Game Pitch
   title: "Game Title"
   description: "Game description goes here."
   history: "Game history and background story goes here."
@@ -24,19 +15,60 @@ game:
     - "Feature 1"
     - "Feature 2"
     - "Feature 3"
-  
-  # Game Logo
-  logo_download: "#"
-  logo_files:
+  developer: "Studio Name"
+  developer_url: "#"
+  release_date: "TBA"
+  platforms:
+    - name: "Steam"
+      url: "https://store.steampowered.com/app/yourgame"
+    - name: "Nintendo Switch"
+      url: "https://nintendo.com/yourgame"
+    - name: "PlayStation"
+      url: "https://playstation.com/yourgame"
+  price:
+    - "USD $19.99"
+    - "USD $29.99"
+    - "USD $49.99"
+  social:
+    - name: "Twitter"
+      url: "https://twitter.com/studio"
+    - name: "Facebook"
+      url: "https://facebook.com/studio"
+    - name: "Instagram"
+      url: "https://instagram.com/studio"
+    - name: "YouTube"
+      url: "https://youtube.com/studio"
+
+# Logo & Icon (Logo section)
+logo:
+  download: "#"
+  files:
     - "placeholder.webp"
     - "placeholder.webp"
     - "placeholder.webp"
 
 # Images (Images section)
 images:
-  - "placeholder.webp"
-  - "placeholder.webp"
-  - "placeholder.webp"
+  download: "#"
+  files:
+    - "placeholder.webp"
+    - "placeholder.webp"
+    - "placeholder.webp"
+
+# Selected Articles (Selected Articles section)
+selected_articles:
+  - quote: "This game is absolutely amazing! A masterpiece of modern gaming."
+    author: "John Doe"
+    link: "https://gamingreview.com/article1"
+    name: "Gaming Review"
+  - quote: "Innovative gameplay mechanics that will change the industry."
+    author: "Jane Smith"
+    link: "https://techgaming.com/article2"
+    name: "Tech Gaming"
+  - quote: "A must-play experience that shouldn't be missed."
+    author: "Mike Johnson"
+    link: "https://indiegames.com/article3"
+    name: "Indie Games Blog"
 
 # Additional Links (Additional Links section)
 links:
@@ -60,23 +92,16 @@ team:
 
 # Contact Information (Contact section)
 contact:
-  inquiries:
-    - name: "General Inquiries"
-      email: "contact@studio.com"
-    - name: "Press Inquiries"
-      email: "press@studio.com"
-    - name: "Business Inquiries"
-      email: "business@studio.com"
-  social_media:
-    - name: "Twitter"
-      handle: "@studio"
-      url: "https://twitter.com/studio"
-    - name: "Facebook"
-      handle: "@studio"
-      url: "https://facebook.com/studio"
-    - name: "Instagram"
-      handle: "@studio"
-      url: "https://instagram.com/studio"
+  - name: "General Inquiries"
+    email: "contact@studio.com"
+  - name: "Press Inquiries"
+    email: "press@studio.com"
+  - name: "Twitter"
+    url: "https://twitter.com/studio"
+  - name: "Facebook"
+    url: "https://facebook.com/studio"
+  - name: "Instagram"
+    url: "https://instagram.com/studio"
 
 # Build settings
 markdown: kramdown

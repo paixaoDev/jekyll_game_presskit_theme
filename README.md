@@ -31,16 +31,43 @@ game:
   developer: "Your Studio"
   developer_url: "https://yourstudio.com"
   release_date: "2024"
-  platforms: "PC, Console"
-  price: "USD $19.99"
-  logo_files:
+  platforms:
+    - name: "Steam"
+      url: "https://store.steampowered.com/app/yourgame"
+    - name: "Nintendo Switch"
+      url: "https://nintendo.com/yourgame"
+  price:
+    - "USD $19.99"
+    - "USD $29.99"
+  social:
+    - name: "Twitter"
+      url: "https://twitter.com/yourgame"
+    - name: "Facebook"
+      url: "https://facebook.com/yourgame"
+# Logo & Icon
+logo:
+  download: "#"
+  files:
     - "game-logo.png"
     - "game-icon.png"
 
 # Images
 images:
-  - "screenshot1.jpg"
-  - "screenshot2.jpg"
+  download: "#"
+  files:
+    - "screenshot1.jpg"
+    - "screenshot2.jpg"
+
+# Selected Articles
+selected_articles:
+  - quote: "This game is absolutely amazing! A masterpiece of modern gaming."
+    author: "John Doe"
+    link: "https://gamingreview.com/article1"
+    name: "Gaming Review"
+  - quote: "Innovative gameplay mechanics that will change the industry."
+    author: "Jane Smith"
+    link: "https://techgaming.com/article2"
+    name: "Tech Gaming"
 
 # Additional Links
 links:
@@ -49,6 +76,8 @@ links:
   - name: "Twitter"
     url: "https://twitter.com/yourgame"
 
+
+
 # Team
 team:
   - name: "Your Name"
@@ -56,13 +85,10 @@ team:
 
 # Contact
 contact:
-  inquiries:
-    - name: "General"
-      email: "contact@studio.com"
-  social_media:
-    - name: "Twitter"
-      handle: "@studio"
-      url: "https://twitter.com/studio"
+  - name: "General Inquiries"
+    email: "contact@studio.com"
+  - name: "Twitter"
+    url: "https://twitter.com/studio"
 
 # About Studio
 about:
@@ -106,16 +132,17 @@ bundle exec jekyll serve
 ## 📄 Sections
 
 Your press kit will include:
-1. **Factsheet** - Basic game info
+1. **Factsheet** - Basic game info (includes social media)
 2. **Description** - Game overview
 3. **History** - Game story
 4. **Features** - Key features
-5. **Images** - Screenshots
+5. **Images** - Screenshots (with download link)
 6. **Logo & Icon** - Downloadable assets
-7. **Additional Links** - External resources
-8. **About Studio** - Developer info
-9. **Team** - Credits
-10. **Contact** - Contact info
+7. **Selected Articles** - Press reviews and quotes
+8. **Additional Links** - External resources
+9. **About Studio** - Developer info
+10. **Team** - Credits
+11. **Contact** - Contact info
 
 ## 🤝 Contributing
 
