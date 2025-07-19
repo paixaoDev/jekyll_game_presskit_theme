@@ -6,8 +6,17 @@ email: "your.email@example.com"
 url: "https://your-site.github.io"
 lang: "en"
 
-# Game Information
+# Game Basic Information
 game:
+  # Factsheet
+  developer: "Studio Name"
+  developer_description: "Studio description"
+  developer_url: "#"
+  release_date: "TBA"
+  platforms: "TBA"
+  price: "USD TBA"
+
+  #Game Pitch
   title: "Game Title"
   description: "Game description goes here."
   history: "Game history and background story goes here."
@@ -15,19 +24,21 @@ game:
     - "Feature 1"
     - "Feature 2"
     - "Feature 3"
-  developer: "Studio Name"
-  developer_description: "Studio description"
-  developer_url: "#"
-  release_date: "TBA"
-  platforms: "TBA"
-  price: "USD TBA"
+  
+  # Game Logo
   logo_download: "#"
   logo_files:
     - "placeholder.webp"
     - "placeholder.webp"
     - "placeholder.webp"
 
-# Additional Links
+# Images (Images section)
+images:
+  - "placeholder.webp"
+  - "placeholder.webp"
+  - "placeholder.webp"
+
+# Additional Links (Additional Links section)
 links:
   - name: "Website"
     url: "#"
@@ -36,29 +47,36 @@ links:
   - name: "Facebook"
     url: "#"
 
-# Team Information
+# About Studio (About Studio section)
+about:
+  description: "Studio description goes here."
+
+# Team Information (Team section)
 team:
   - name: "Developer Name"
     role: "Role / Position"
   - name: "Artist Name"
     role: "Role / Position"
 
-# Contact Information
+# Contact Information (Contact section)
 contact:
-  inquiries: "contact@studio.com"
-  social_media: "@studio"
-  social_url: "#"
-
-# About Studio
-about:
-  description: "Studio description goes here."
-
-# Images - Add your game screenshots here
-# Place your images in the assets/images/ folder
-images:
-  - "placeholder.webp"
-  - "placeholder.webp"
-  - "placeholder.webp"
+  inquiries:
+    - name: "General Inquiries"
+      email: "contact@studio.com"
+    - name: "Press Inquiries"
+      email: "press@studio.com"
+    - name: "Business Inquiries"
+      email: "business@studio.com"
+  social_media:
+    - name: "Twitter"
+      handle: "@studio"
+      url: "https://twitter.com/studio"
+    - name: "Facebook"
+      handle: "@studio"
+      url: "https://facebook.com/studio"
+    - name: "Instagram"
+      handle: "@studio"
+      url: "https://instagram.com/studio"
 
 # Build settings
 markdown: kramdown

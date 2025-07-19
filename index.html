@@ -152,11 +152,15 @@ layout: default
                     <div class="contact-content">
                         <div class="contact-item">
                             <strong>Inquiries</strong><br>
-                            <a href="mailto:{{ site.contact.inquiries }}">{{ site.contact.inquiries }}</a>
+                            {% for inquiry in site.contact.inquiries %}
+                            <a href="mailto:{{ inquiry.email }}">{{ inquiry.name }}: {{ inquiry.email }}</a><br>
+                            {% endfor %}
                         </div>
                         <div class="contact-item">
                             <strong>Social Media</strong><br>
-                            <a href="{{ site.contact.social_url }}">{{ site.contact.social_media }}</a>
+                            {% for social in site.contact.social_media %}
+                            <a href="{{ social.url }}">{{ social.name }}: {{ social.handle }}</a><br>
+                            {% endfor %}
                         </div>
                     </div>
                 </section>
