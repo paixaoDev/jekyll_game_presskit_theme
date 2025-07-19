@@ -349,8 +349,7 @@ If you used this as a template and want to share your press kit:
 
 See this theme in action! Here are some press kits created with this template:
 
-- **[Your Game Name](https://yourusername.github.io/your-game-presskit)** - Add your press kit here!
-- **[Another Game](https://anotheruser.github.io/another-game-presskit)** - Add more examples here!
+- **[The tale  of dragons ans oceans](https://taledragonsoceans.com.br/)**
 
 **Want to be featured?** Create your press kit and [open an issue](https://github.com/yourusername/jekyll-game-presskit-theme/issues) to add it to this list!
 
