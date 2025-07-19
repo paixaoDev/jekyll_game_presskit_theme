@@ -6,6 +6,9 @@ email: "your.email@example.com"
 url: "https://your-site.github.io"
 lang: "en"
 
+# Google Analytics
+google_analytics: "G-XXXXXXXXXX"  # Replace with your Google Analytics ID
+
 # Game Information (Factsheet, Description, History, Features, Logo)
 game:
   title: "Game Title"
