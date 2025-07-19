@@ -135,10 +135,77 @@ about:
 
 ## 🖼️ Adding Images
 
-Place your images in `assets/images/`:
+### Option 1: Using Full URLs (Recommended)
 
-- **Screenshots**: `screenshot1.jpg`, `screenshot2.jpg`, etc.
-- **Logos**: `game-logo.png`, `game-icon.png`, etc.
+Add complete image URLs directly in `_config.yml`:
+
+```yaml
+# Logo & Icon
+logo:
+  download: "#"
+  files:
+    - "https://yourdomain.com/images/game-logo.png"
+    - "https://yourdomain.com/images/game-icon.png"
+    - "https://yourdomain.com/images/game-banner.png"
+
+# Images (Screenshots)
+images:
+  download: "#"
+  files:
+    - "https://yourdomain.com/images/screenshot1.jpg"
+    - "https://yourdomain.com/images/screenshot2.jpg"
+    - "https://yourdomain.com/images/screenshot3.jpg"
+```
+
+#### Examples with Different Services:
+
+```yaml
+# Using Imgur
+files:
+  - "https://i.imgur.com/your-image-id.jpg"
+
+# Using Cloudinary
+files:
+  - "https://res.cloudinary.com/your-cloud/image/upload/v1/your-image.jpg"
+
+# Using GitHub (for images in your repo)
+files:
+  - "https://raw.githubusercontent.com/username/repo/main/images/screenshot.jpg"
+
+# Using CDN
+files:
+  - "https://cdn.yourdomain.com/images/screenshot.jpg"
+```
+
+### Option 2: Using Local Assets
+
+Place your images in `assets/images/` and use relative paths:
+
+```yaml
+logo:
+  files:
+    - "/assets/images/game-logo.png"
+    - "/assets/images/game-icon.png"
+
+images:
+  files:
+    - "/assets/images/screenshot1.jpg"
+    - "/assets/images/screenshot2.jpg"
+```
+
+### 🎯 Recommended Image Sizes
+
+- **Logos**: 800x400px (16:9 ratio)
+- **Icons**: 512x512px (square)
+- **Screenshots**: 1920x1080px (16:9 ratio)
+- **Banners**: 1200x630px (social media optimized)
+
+### 📝 Supported Formats
+
+- **PNG**: For logos and icons (transparency support)
+- **JPG/JPEG**: For screenshots and photos
+- **WEBP**: For better compression
+- **GIF**: For simple animations
 
 ## 🎨 Customization
 
@@ -179,6 +246,30 @@ bundle exec jekyll serve
 
 # Visit http://localhost:4000
 ```
+
+## 🛠️ Troubleshooting
+
+### Images Not Displaying?
+
+If images are not showing up:
+
+1. **Check URLs**: Ensure image URLs in `_config.yml` are complete and accessible
+2. **Test URLs**: Open image URLs directly in browser to verify they work
+3. **Use HTTPS**: Prefer HTTPS URLs for better security and compatibility
+4. **Check file formats**: Use common formats like PNG, JPG, or WEBP
+
+### Common Issues
+
+- **404 errors**: Verify image URLs are correct and accessible
+- **Mixed content**: Use HTTPS URLs when your site is served over HTTPS
+- **Slow loading**: Optimize image sizes (recommended max: 4MB per image)
+- **CORS issues**: Host images on a CDN or your own domain
+
+### 💡 Tips
+
+- **Use CDN**: Services like Cloudinary, Imgur, or your own CDN for better performance
+- **Optimize images**: Compress images before uploading
+- **Test locally**: Run `bundle exec jekyll serve` to test before deploying
 
 ## 📄 Sections
 

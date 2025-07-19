@@ -46,17 +46,16 @@ game:
 logo:
   download: "#"
   files:
-    - "placeholder.webp"
-    - "placeholder.webp"
-    - "placeholder.webp"
+    - "assets/images/placeholder.webp"
 
 # Images (Images section)
 images:
   download: "#"
   files:
-    - "placeholder.webp"
-    - "placeholder.webp"
-    - "placeholder.webp"
+    - "assets/images/placeholder.webp"
+    - "assets/images/placeholder.webp"
+    - "assets/images/placeholder.webp"
+    - "assets/images/placeholder.webp"
 
 # Videos (Videos section)
 videos:
