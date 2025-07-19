@@ -361,12 +361,6 @@ MIT License - feel free to use this theme for your projects.
 
 This press kit theme was inspired by [presskit()](https://dopresskit.com/) by [Rami Ismail](https://twitter.com/tha_rami) of [Vlambeer](https://vlambeer.com/).
 
----
-
-**Ready to showcase your game?** Click "Use this template" and start building your press kit! 🎮
-
----
-
 ## 🌍 Other Languages
 
 - [Português Brasileiro](README.pt-BR.md) - Leia em português 
