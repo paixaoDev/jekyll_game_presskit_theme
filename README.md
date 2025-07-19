@@ -1,6 +1,19 @@
 # Game Press Kit Theme
 
-A clean and minimal Jekyll theme for creating professional game press kits on GitHub Pages.
+A clean, modern, and professional Jekyll theme for creating stunning game press kits. Perfect for indie developers, game studios, and publishers who want to showcase their games with style.
+
+## ✨ Features
+
+- 🎨 **Modern Design**: Clean, professional layout with beautiful typography
+- 📱 **Fully Responsive**: Works perfectly on desktop, tablet, and mobile
+- ⚡ **Fast Loading**: Optimized for speed and performance
+- 🔧 **Easy Customization**: Everything configurable via `_config.yml`
+- 📊 **Google Analytics**: Built-in GA4 support
+- 🖼️ **Flexible Images**: Support for any image hosting service
+- 🎬 **Video Integration**: YouTube and Vimeo support
+- 📝 **SEO Optimized**: Meta tags, Open Graph, and Twitter Cards
+- 🚀 **GitHub Pages Ready**: Deploy instantly to GitHub Pages
+- 🎮 **Game-Focused**: Designed specifically for game press kits
 
 ## 🚀 Quick Start
 
@@ -9,7 +22,7 @@ A clean and minimal Jekyll theme for creating professional game press kits on Gi
 1. **Click "Use this template"** at the top of this page
 2. **Name your repository** (e.g., `my-game-presskit`)
 3. **Edit `_config.yml`** with your game information
-4. **Add your images** to `assets/images/`
+4. **Add your images** using URLs or local files
 5. **Your press kit is live** at `https://yourusername.github.io/repository-name`
 
 ### Option 2: Fork the Repository
@@ -21,7 +34,7 @@ A clean and minimal Jekyll theme for creating professional game press kits on Gi
    cd jekyll-game-presskit-theme
    ```
 3. **Edit `_config.yml`** with your game information
-4. **Add your images** to `assets/images/`
+4. **Add your images** using URLs or local files
 5. **Commit and push** your changes:
    ```bash
    git add .
@@ -30,11 +43,6 @@ A clean and minimal Jekyll theme for creating professional game press kits on Gi
    ```
 6. **Enable GitHub Pages** in your repository settings
 7. **Your press kit is live** at `https://yourusername.github.io/jekyll-game-presskit-theme`
-
-### Which Option to Choose?
-
-- **Use as Template**: Creates a clean copy, perfect for new projects
-- **Fork**: Keeps connection to original, good for updates and contributions
 
 ## 📝 Configuration
 
@@ -45,8 +53,9 @@ Edit `_config.yml` to customize your press kit:
 title: "Your Game Title"
 description: "Your game description"
 url: "https://yourusername.github.io/repository-name"
+lang: "en"
 
-# Google Analytics
+# Google Analytics (Optional)
 google_analytics: "G-XXXXXXXXXX"  # Replace with your Google Analytics ID
 
 # Game Information
@@ -73,19 +82,20 @@ game:
       url: "https://twitter.com/yourgame"
     - name: "Facebook"
       url: "https://facebook.com/yourgame"
+
 # Logo & Icon
 logo:
   download: "#"
   files:
-    - "game-logo.png"
-    - "game-icon.png"
+    - "https://yourdomain.com/images/game-logo.png"
+    - "https://yourdomain.com/images/game-icon.png"
 
 # Images
 images:
   download: "#"
   files:
-    - "screenshot1.jpg"
-    - "screenshot2.jpg"
+    - "https://yourdomain.com/images/screenshot1.jpg"
+    - "https://yourdomain.com/images/screenshot2.jpg"
 
 # Videos
 videos:
@@ -113,8 +123,6 @@ links:
     url: "https://yourgame.com"
   - name: "Twitter"
     url: "https://twitter.com/yourgame"
-
-
 
 # Team
 team:
@@ -209,9 +217,34 @@ images:
 
 ## 🎨 Customization
 
-- **Colors & Layout**: Edit `assets/css/main.css`
-- **Content**: All content is managed through `_config.yml`
-- **Sections**: The theme includes Factsheet, Description, History, Features, Videos, Images, Logo, Selected Articles, Links, About, Team, and Contact
+### Colors & Layout
+Edit `assets/css/main.css` to customize:
+- Colors and typography
+- Layout spacing and grid
+- Responsive breakpoints
+- Animation effects
+
+### Content
+All content is managed through `_config.yml`:
+- Game information
+- Images and videos
+- Team and contact details
+- Social media links
+
+### Sections
+The theme includes these sections:
+1. **Factsheet** - Basic game info
+2. **Description** - Game overview
+3. **History** - Game story
+4. **Features** - Key features
+5. **Videos** - Gameplay trailers
+6. **Images** - Screenshots
+7. **Logo & Icon** - Downloadable assets
+8. **Selected Articles** - Press reviews
+9. **Additional Links** - External resources
+10. **About Studio** - Developer info
+11. **Team** - Credits
+12. **Contact** - Contact info
 
 ## 📊 Google Analytics
 
@@ -226,15 +259,6 @@ To enable Google Analytics:
 
 The theme uses Google Analytics 4 (GA4) with the gtag.js implementation.
 
-## 📱 Features
-
-- ✅ Responsive design (mobile-friendly)
-- ✅ Clean, professional layout
-- ✅ Easy customization via `_config.yml`
-- ✅ SEO optimized
-- ✅ Fast loading
-- ✅ GitHub Pages ready
-
 ## 🔧 Local Development
 
 ```bash
@@ -245,6 +269,19 @@ bundle install
 bundle exec jekyll serve
 
 # Visit http://localhost:4000
+```
+
+### Development Options
+
+```bash
+# With live reload
+bundle exec jekyll serve --livereload
+
+# On specific port
+bundle exec jekyll serve --port 4001
+
+# With incremental build (faster)
+bundle exec jekyll serve --incremental
 ```
 
 ## 🛠️ Troubleshooting
@@ -321,6 +358,16 @@ See this theme in action! Here are some press kits created with this template:
 
 MIT License - feel free to use this theme for your projects.
 
+## 🙏 Acknowledgments
+
+This press kit theme was inspired by [presskit()](https://dopresskit.com/) by [Rami Ismail](https://twitter.com/tha_rami) of [Vlambeer](https://vlambeer.com/).
+
 ---
 
-**Ready to showcase your game?** Click "Use this template" and start building your press kit! 🎮 
+**Ready to showcase your game?** Click "Use this template" and start building your press kit! 🎮
+
+---
+
+## 🌍 Other Languages
+
+- [Português Brasileiro](README.pt-BR.md) - Leia em português 
