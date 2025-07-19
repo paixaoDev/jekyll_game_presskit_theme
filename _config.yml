@@ -55,6 +55,18 @@ images:
     - "placeholder.webp"
     - "placeholder.webp"
 
+# Videos (Videos section)
+videos:
+  - title: "Gameplay Trailer"
+    url: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    description: "Official gameplay trailer showcasing the main features"
+  - title: "Developer Interview"
+    url: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    description: "Behind the scenes interview with the development team"
+  - title: "Launch Trailer"
+    url: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    description: "Epic launch trailer with stunning visuals"
+
 # Selected Articles (Selected Articles section)
 selected_articles:
   - quote: "This game is absolutely amazing! A masterpiece of modern gaming."

@@ -95,7 +95,19 @@ layout: default
             <section id="videos" class="presskit-section">
                 <h2>Videos</h2>
                 <div class="videos-content">
-                    <!-- Videos will be added here -->
+                    {% for video in site.videos %}
+                    <div class="video-item">
+                        <h3>{{ video.title }}</h3>
+                        <div class="video-embed">
+                            <iframe src="{{ video.url }}" 
+                                    frameborder="0" 
+                                    allowfullscreen 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+                            </iframe>
+                        </div>
+                        <p class="video-description">{{ video.description }}</p>
+                    </div>
+                    {% endfor %}
                 </div>
             </section>
 

@@ -58,6 +58,15 @@ images:
     - "screenshot1.jpg"
     - "screenshot2.jpg"
 
+# Videos
+videos:
+  - title: "Gameplay Trailer"
+    url: "https://www.youtube.com/embed/VIDEO_ID"
+    description: "Official gameplay trailer showcasing the main features"
+  - title: "Developer Interview"
+    url: "https://www.youtube.com/embed/VIDEO_ID"
+    description: "Behind the scenes interview with the development team"
+
 # Selected Articles
 selected_articles:
   - quote: "This game is absolutely amazing! A masterpiece of modern gaming."
@@ -136,13 +145,14 @@ Your press kit will include:
 2. **Description** - Game overview
 3. **History** - Game story
 4. **Features** - Key features
-5. **Images** - Screenshots (with download link)
-6. **Logo & Icon** - Downloadable assets
-7. **Selected Articles** - Press reviews and quotes
-8. **Additional Links** - External resources
-9. **About Studio** - Developer info
-10. **Team** - Credits
-11. **Contact** - Contact info
+5. **Videos** - Gameplay trailers and interviews
+6. **Images** - Screenshots (with download link)
+7. **Logo & Icon** - Downloadable assets
+8. **Selected Articles** - Press reviews and quotes
+9. **Additional Links** - External resources
+10. **About Studio** - Developer info
+11. **Team** - Credits
+12. **Contact** - Contact info
 
 ## 🤝 Contributing
 
