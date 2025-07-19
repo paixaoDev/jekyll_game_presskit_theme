@@ -2,7 +2,17 @@
 
 A clean and minimal Jekyll theme for creating professional game press kits on GitHub Pages.
 
-## Quick Start
+## ✨ Features
+
+- **Clean & Professional Design** - Modern, minimalist layout perfect for press kits
+- **Responsive Layout** - Works perfectly on desktop, tablet, and mobile
+- **Easy Customization** - All content managed through `_config.yml`
+- **Dynamic Links** - Easy to add and manage additional links
+- **Optimized Images** - Automatic image sizing and responsive grid layout
+- **Fast Loading** - Optimized CSS and minimal dependencies
+- **SEO Ready** - Open Graph and Twitter Card meta tags included
+
+## 🚀 Quick Start
 
 ### 1. Fork this repository
 
@@ -39,9 +49,20 @@ game:
   website: "https://yourgame.com"
   logo_download: "/assets/images/logo.zip"
   logo_files:
-    - "logo.png"
-    - "icon.png"
-    - "banner.jpg"
+    - "game-logo.png"
+    - "game-icon.png"
+    - "game-banner.jpg"
+
+# Additional Links
+links:
+  - name: "Website"
+    url: "https://yourgame.com"
+  - name: "Twitter"
+    url: "https://twitter.com/yourgame"
+  - name: "Facebook"
+    url: "https://facebook.com/yourgame"
+  - name: "YouTube"
+    url: "https://youtube.com/yourgame"
 
 # Team Information
 team:
@@ -61,9 +82,8 @@ contact:
 # About Studio
 about:
   description: "Your studio description goes here."
-  more_info: "More information"
 
-# Images
+# Images - Add your game screenshots here
 images:
   - "screenshot1.jpg"
   - "screenshot2.jpg"
@@ -91,15 +111,27 @@ bundle exec jekyll serve
 ### 5. Add Images
 
 Place your game images in `assets/images/`:
-- Screenshots
-- Logo files
-- Press kit images
+
+**Screenshots:**
+- `screenshot1.jpg` - Main gameplay screenshot
+- `screenshot2.jpg` - Second gameplay screenshot  
+- `screenshot3.jpg` - Third gameplay screenshot
+
+**Logo Files:**
+- `game-logo.png` - Main game logo (512x512px recommended)
+- `game-icon.png` - Game icon (256x256px recommended)
+- `game-banner.jpg` - Game banner (1200x630px recommended)
+
+**Image Specifications:**
+- **Format**: JPG for screenshots, PNG for logos
+- **Size**: Maximum 2MB per image
+- **Resolution**: 1920x1080 or 1280x720 for screenshots
 
 ### 6. Your site is live!
 
 Your press kit will be available at `https://yourusername.github.io/repository-name`
 
-## Configuration Options
+## 📋 Configuration Options
 
 ### Game Information
 - `game.title` - Game title (appears in sidebar)
@@ -114,7 +146,10 @@ Your press kit will be available at `https://yourusername.github.io/repository-n
 - `game.price` - Game price
 - `game.website` - Game website URL
 - `game.logo_download` - Logo download link
-- `game.logo_files` - Array of logo filenames (logo.png, icon.png, etc.)
+- `game.logo_files` - Array of logo filenames
+
+### Additional Links
+- `links` - Array of additional links with `name` and `url`
 
 ### Team Information
 - `team` - Array of team members with `name` and `role`
@@ -126,65 +161,72 @@ Your press kit will be available at `https://yourusername.github.io/repository-n
 
 ### About Studio
 - `about.description` - Studio description
-- `about.more_info` - Additional information text
 
 ### Images
-- `images` - Array of image filenames
+- `images` - Array of screenshot filenames
 
-## Structure
+## 🏗️ Structure
 
 ```
 jekyll-game-presskit-theme/
 ├── _config.yml          # Site configuration with game data
 ├── _layouts/            # Page layouts
+│   └── default.html     # Main layout template
 ├── assets/              # CSS, JS, and images
 │   ├── css/
-│   └── js/
-├── index.html           # Main press kit page (uses _config.yml data)
+│   │   └── main.css     # Main stylesheet
+│   ├── js/
+│   │   └── main.js      # JavaScript functionality
+│   └── images/          # Game images (screenshots, logos)
+├── index.html           # Main press kit page
 ├── Gemfile              # Jekyll dependencies
+├── GITHUB_SETUP.md      # Detailed GitHub Pages setup guide
 └── README.md           # This file
 ```
 
-## Customization
+## 🎨 Customization
 
 ### Colors and Styling
 
 Edit `assets/css/main.css` to customize:
-- Colors
-- Typography
-- Layout spacing
+- Colors and typography
+- Layout spacing and grid system
 - Responsive breakpoints
+- Image display and sizing
 
-### Layout
+### Layout Features
 
-The theme uses a two-column layout:
-- **Left Sidebar**: Navigation and game title
-- **Main Content**: Game information in organized sections
+The theme uses a modern responsive layout:
+- **Fixed Sidebar**: Navigation and game title
+- **Main Content**: Organized sections with grid layout
+- **Responsive Images**: Automatic sizing and grid display
+- **Mobile Optimized**: Single column layout on mobile devices
 
-## Sections
+## 📄 Sections
 
-The press kit includes these sections:
-1. **Factsheet** - Basic game information
-2. **Description** - Game overview
+The press kit includes these organized sections:
+
+1. **Factsheet** - Basic game information (developer, release date, platforms, price)
+2. **Description** - Game overview and description
 3. **History** - Game story and background
-4. **Features** - Key gameplay features
-5. **Videos** - Game trailers and gameplay
-6. **Images** - Screenshots and artwork
-7. **Logo & Icon** - Downloadable assets
-8. **Additional Links** - External resources
+4. **Features** - Key gameplay features list
+5. **Videos** - Game trailers and gameplay videos (placeholder)
+6. **Images** - Screenshots in responsive grid layout
+7. **Logo & Icon** - Downloadable logo assets
+8. **Additional Links** - External resources and social media
 9. **About Studio** - Developer information
 10. **Team** - Credits and team members
 11. **Contact** - Contact information
 
-## Browser Support
+## 🌐 Browser Support
 
 - Chrome (latest)
 - Firefox (latest)
 - Safari (latest)
 - Edge (latest)
-- Mobile browsers
+- Mobile browsers (iOS Safari, Chrome Mobile)
 
-## Troubleshooting
+## 🔧 Troubleshooting
 
 ### Local Development Issues
 
@@ -194,16 +236,44 @@ The press kit includes these sections:
 **Problem**: Permission errors during `bundle install`
 **Solution**: Try `bundle install --path vendor/bundle`
 
-**Problem**: Jekyll build fails
-**Solution**: Make sure all YAML syntax in `_config.yml` is correct (proper indentation)
+**Problem**: Jekyll build fails with YAML errors
+**Solution**: Check `_config.yml` syntax - ensure proper indentation (use spaces, not tabs)
+
+**Problem**: Images not displaying
+**Solution**: 
+- Ensure images are in `assets/images/` folder
+- Check that filenames match exactly with `_config.yml`
+- Verify image formats are supported (JPG, PNG, WebP)
 
 **Problem**: Site looks different locally vs GitHub Pages
 **Solution**: This is normal - GitHub Pages may use different Jekyll versions. Test the final result on GitHub Pages.
 
-## License
+### Common Issues
+
+**Images too large**: The theme automatically sizes images to fit the layout. If you need larger images, edit the CSS in `assets/css/main.css`.
+
+**Links not working**: Make sure URLs in `_config.yml` include `http://` or `https://` for external links.
+
+**Layout broken**: Check that all YAML arrays in `_config.yml` are properly formatted with consistent indentation.
+
+## 📚 Additional Resources
+
+- [Jekyll Documentation](https://jekyllrb.com/docs/)
+- [GitHub Pages Documentation](https://pages.github.com/)
+- [Liquid Template Language](https://shopify.github.io/liquid/)
+
+## 📄 License
 
 This theme is open source and available under the [MIT License](LICENSE).
 
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to:
+- Report bugs
+- Suggest new features
+- Submit pull requests
+- Improve documentation
+
 ---
 
-**Note**: This theme is designed to be simple and clean. It focuses on presenting your game information clearly and professionally without unnecessary distractions. All content is managed through `_config.yml` for easy customization. 
+**Note**: This theme is designed to be simple, clean, and professional. It focuses on presenting your game information clearly without unnecessary distractions. All content is managed through `_config.yml` for easy customization and maintenance. 
