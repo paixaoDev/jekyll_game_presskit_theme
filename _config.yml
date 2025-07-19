@@ -21,12 +21,20 @@ game:
   release_date: "TBA"
   platforms: "TBA"
   price: "USD TBA"
-  website: "#"
   logo_download: "#"
   logo_files:
-    - "logo.png"
-    - "icon.png"
-    - "banner.jpg"
+    - "placeholder.webp"
+    - "placeholder.webp"
+    - "placeholder.webp"
+
+# Additional Links
+links:
+  - name: "Website"
+    url: "#"
+  - name: "Twitter"
+    url: "#"
+  - name: "Facebook"
+    url: "#"
 
 # Team Information
 team:
@@ -45,11 +53,12 @@ contact:
 about:
   description: "Studio description goes here."
 
-# Images
+# Images - Add your game screenshots here
+# Place your images in the assets/images/ folder
 images:
-  - "screenshot1.jpg"
-  - "screenshot2.jpg"
-  - "screenshot3.jpg"
+  - "placeholder.webp"
+  - "placeholder.webp"
+  - "placeholder.webp"
 
 # Build settings
 markdown: kramdown

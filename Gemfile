@@ -1,4 +1,5 @@
 source "https://rubygems.org"
 
-# Use github-pages gem for GitHub Pages compatibility
-gem "github-pages" 
+# Use very old Jekyll version without websocket dependencies
+gem "jekyll", "~> 3.6.0"
+gem "webrick", "~> 1.8" 

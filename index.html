@@ -95,7 +95,7 @@ layout: default
                 <div class="images-content">
                     {% for image in site.images %}
                     <div class="image-item">
-                        <p><img src="{{ image }}" alt="{{ image }}"></p>
+                        <p><img src="/assets/images/{{ image }}" alt="{{ image }}"></p>
                     </div>
                     {% endfor %}
                 </div>
@@ -109,7 +109,7 @@ layout: default
                     <a href="{{ site.game.logo_download }}" class="download-link">download logo files as .zip</a>
                     <div class="logo-display">
                         {% for logo_file in site.game.logo_files %}
-                        <p><img src="{{ logo_file }}" alt="{{ logo_file }}"></p>
+                        <p><img src="/assets/images/{{ logo_file }}" alt="{{ logo_file }}"></p>
                         {% endfor %}
                     </div>
                 </div>
@@ -120,7 +120,9 @@ layout: default
             <section id="links" class="presskit-section">
                 <h2>Additional Links</h2>
                 <ul>
-                    <li><a href="{{ site.game.website }}">Game website</a></li>
+                    {% for link in site.links %}
+                    <li><a href="{{ link.url }}">{{ link.name }}</a></li>
+                    {% endfor %}
                 </ul>
             </section>
 
