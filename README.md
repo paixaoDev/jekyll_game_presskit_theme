@@ -236,7 +236,7 @@ If you've forked this repository and want to contribute back:
 
 See this theme in action! Here are some press kits created with this template:
 
-- **[The tale  of dragons ans oceans](https://taledragonsoceans.com.br/)**
+- **[The tale  of dragons ans oceans](https://paixaodev.github.io/theTaleOfDragonsAndOceansSite/)**
 
 **Want to be featured?** Create your press kit and [open an issue](https://github.com/yourusername/jekyll-game-presskit-theme/issues) to add it to this list!
 
